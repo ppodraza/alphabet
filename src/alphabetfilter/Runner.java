@@ -24,7 +24,8 @@ public class Runner {
         } 
          
         for(char c = 'a'; c <= 'z'; c++) 
-            System.out.println(filter.execute(c));
+            if(filter.execute(c))
+                System.out.println(c);
     }
     
 }
